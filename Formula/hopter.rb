@@ -2,25 +2,25 @@ class Hopter < Formula
   desc "Self-hosted remote control plane for local coding agents"
   homepage "https://github.com/sorcererxw/hopter"
   license "Apache-2.0"
-  version "0.0.20"
+  version "0.0.21"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.20/hopter-darwin-arm64"
-      sha256 "993b988e107f9dbd39d727f06248097447270bc73a5be415d5f6e69808bfbac5"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.21/hopter-darwin-arm64"
+      sha256 "cfc6c12f18cff8bd022f6618309cc48b6ab292719bad0a4b6f059b4ad251351c"
     else
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.20/hopter-darwin-amd64"
-      sha256 "bec345115c403dea947bc83dd5967847ba1596463efad39b9f178b3279711878"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.21/hopter-darwin-amd64"
+      sha256 "31134f985383dd390460de38aba696b3a06c88834dc2aae1995c0c873f39027c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.20/hopter-linux-arm64"
-      sha256 "a65d128b4f574f6729afb3497980dc2738581c58fa33a801993abbad2da88893"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.21/hopter-linux-arm64"
+      sha256 "2e77cf928f17218648847141bb26a0d30938e05b08e5559ed0c5bdcbc4bfe96f"
     else
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.20/hopter-linux-amd64"
-      sha256 "8bdbab01e9cfcc6874cc9b47ef8cdf81557483c8edfeccffc69c2377e9579213"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.21/hopter-linux-amd64"
+      sha256 "a420f5477864a49d06949722719b11936e0ac28d29aa689d51821ec050b9bbbb"
     end
   end
 

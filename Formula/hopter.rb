@@ -5,13 +5,13 @@
 class Hopter < Formula
   desc "Self-hosted remote control plane for local coding agents"
   homepage "https://github.com/sorcererxw/hopter"
-  version "0.0.33"
+  version "0.0.34"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.33/hopter-homebrew-darwin-amd64"
-      sha256 "f767bc9af080c362145b1761cb6b381d84b8c09db1cf9a1b1650d2c28bdb5e56"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.34/hopter-homebrew-darwin-amd64"
+      sha256 "9a2af628a70225788686351c69e89de9db35d777869bdc81df4dda8026808034"
 
       define_method(:install) do
         source = Dir["hopter-homebrew-*"].first
@@ -19,8 +19,8 @@ class Hopter < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.33/hopter-homebrew-darwin-arm64"
-      sha256 "f5b143cbb6cbee56aa382551989c6c745382e8096d172f67abe63f9ef013317c"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.34/hopter-homebrew-darwin-arm64"
+      sha256 "c845b42ad57b3b177a5faed4e37d72d65c33318574ed421c3b21968931614fb5"
 
       define_method(:install) do
         source = Dir["hopter-homebrew-*"].first
@@ -31,16 +31,16 @@ class Hopter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.33/hopter-homebrew-linux-amd64"
-      sha256 "033530d817ac52a4c77d29a0e3c668d988b86abf8a2150446eb8f956439ec11b"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.34/hopter-homebrew-linux-amd64"
+      sha256 "7e131dbb1a2b382e889056ae72b28265167b7c012a2f3f8e0c16e9dae84ba78e"
       define_method(:install) do
         source = Dir["hopter-homebrew-*"].first
         bin.install source => "hopter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.33/hopter-homebrew-linux-arm64"
-      sha256 "a93fd9a0b7d481a87dcf9e7b4edfc95883bdbe9aded4f6a96087dbdaf8fd1eb6"
+      url "https://github.com/sorcererxw/hopter/releases/download/v0.0.34/hopter-homebrew-linux-arm64"
+      sha256 "b4c39d681df0d42466e7d835eeae790d0095eb355694607123ce7180376df74a"
       define_method(:install) do
         source = Dir["hopter-homebrew-*"].first
         bin.install source => "hopter"
